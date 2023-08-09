@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Mathan"/>
+    <meta name="Description" content="A html forms to submit">
+    <meta name="Keyword" content="forms">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML form</title>
+</head>
+<body>
+<h1>BANK FORM</h1>
+    <form>
+     <label for="user-firstname">First name</label>
+     <input type="text"
+            placeholder="Enter your first name"
+            id="user-firstname"
+            name="user-firstname"required/><br>
+            <br>
+        <label for="user-lastname">Last name</label>
+        <input type="text"
+            placeholder="Enter your last name"
+            id="user-lastname"
+            name="user-lastname"required/><br>
+            <br>
+            <label for="user-DOB">DOB</label>
+        <input type="text"
+            placeholder="DD/MM/YYYY"
+            id="user-lastname"
+            name="user-lastname"
+            pattern="\d{1,2}/\d{1,2}/\d{4}"required/><br>
+            <br>
+            <label for="user-email">Email</label>
+            <input type="text"
+                placeholder="Enter your Email"
+                id="user-email"
+                name="user-email"
+                pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$"required/><br>
+                <br>
+                    <label for="user-mob">Phone No:</label>
+                    <input type="text"
+                        placeholder="Enter your Phone num"
+                        id="user-mob"
+                        name="user-mob"
+                        pattern="[6789][0-9]{9}"required/><br><br>
+
+            <label for="user-fname">Father name</label>
+            <input type="text"
+            placeholder="Enter your father name"
+            id="user-fname"
+            name="user-fname"required/><br><br>
+
+            <label for="user-addr">Address</label>
+            <input type="text"
+            placeholder="Enter your Address"
+            id="user-addr"
+            name="user-addr"required/><br><br>
+            
+            <label for="user-country">Country</label>
+            <input type="text"
+            placeholder="Enter your Country"
+            id="user-country"
+            name="user-country"required/><br><br>
+
+            <label for="work">You're currently</label>
+            <select id="work">
+            
+            <option value="none">---</option>
+            <option value="student">Studying</option>
+            <option value="working">Working</option>
+            </select>
+            <br>
+            <br>
+            <label for="Gender"required>Gender</label>
+            <input type="radio" id="gender" name="gender" value="male"/>
+            <label for="Male">Male</label>
+            <input type="radio" id="gender" name="gender" value="female"/>
+            <label for="Female">Female</label>
+            <input type="radio" id="gender" name="gender" value="other"/>
+            <label for="other">other</label>
+
+            <br>
+            <br>
+            <label for="work">Religion</label>
+            <select id="work">
+            <option value="blank">--</option>
+            <option value="Hindu">Hindu</option>
+            <option value="Muslim">Muslim</option>
+            <option value="Christian">Christian</option>
+            <option value="other">other</option>
+            </select>
+            <br>
+            <br>
+            <input type="checkbox" id="terms" name="terms"required>
+            <label for="terms"required> I have read and agree to our terms and conditons</label>
+                    
+     <br>
+     <br>
+     
+
+     
+     <button> SUBMIT</button>
+    </form>
+</body>
+</html>
